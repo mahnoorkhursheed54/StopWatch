@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+</head>
+<style>
+     body{
+         background-image: url(https://images6.alphacoders.com/410/410958.jpg);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+     }
+     h1{
+         color: black;
+         margin-left: 40px;
+         text-decoration: underline;
+     }
+     h2{
+         color: white;
+         display: inline-block;
+         margin-left: 32px;
+         width: 50px;
+     }
+     .btn{
+         width: 70px;
+         height: 40px;
+         border-radius: 50%;
+         border-color: black;
+         margin: 5px;
+         margin-left: 10px;
+         color: white;
+         font-weight: bold;
+         background-color: black;
+     }
+         body{
+             display: flex;
+             flex-direction: column;
+             width : 100%;
+             flex-wrap: wrap;
+     }
+</style>
+<body>
+    <div>
+       <h1>Stop Watch</h1>
+    </div>
+    <div>
+       <h2 id="min">00</h2>
+       <h2 id="sec">00</h2>
+       <h2 id="msec">00</h2>
+    </div>
+    <div>
+       <button class="btn" onclick="start()">Start</button>
+       <button class="btn" onclick="stop()">Stop</button>
+       <button class="btn" onclick="reset()">Reset</button>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
